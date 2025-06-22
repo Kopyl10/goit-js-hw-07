@@ -1,8 +1,6 @@
-const galleryItems = window.galleryItems;
-
 const gallery = document.querySelector(".gallery");
 
-const markup = galleryItems
+const markup = window.galleryItems
   .map(({ preview, original, description }) => {
     return `
       <li class="gallery__item">
